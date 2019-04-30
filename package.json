@@ -12,6 +12,7 @@
     "bootstrap-vue": "^2.0.0-rc.19",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-meta": "^1.6.0",
     "vue-router": "^3.0.6"
   },
   "devDependencies": {

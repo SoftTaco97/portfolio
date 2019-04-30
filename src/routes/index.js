@@ -1,5 +1,12 @@
+// Vue
+import Vue from 'vue';
+
 // Vue Router
 import Router from 'vue-router';
+
+// Meta information - SEO YO
+import Meta from 'vue-meta';
+Vue.use(Meta);
 
 // Pages
 
