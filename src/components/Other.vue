@@ -1,10 +1,10 @@
 <template>
-    <Header title="Other Pages!" />
+    <appHeader title="Other Pages!" />
 </template>
 
 <script>
     // Header
-    import Header from './templates/Header.vue';
+    import appHeader from './templates/Header.vue';
 
     export default {
         name: 'Other',
@@ -17,7 +17,7 @@
             ]
         },
         components: {
-            Header
+            appHeader
         }
     }
 </script>
