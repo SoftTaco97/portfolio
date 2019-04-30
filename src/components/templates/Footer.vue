@@ -2,10 +2,10 @@
     <footer>
         <b-container fluid>
             <b-row>
-                <b-col>
+                <b-col md="4">
                     <img src="https://martinezdesigns.net/images/favicon.png" alt="logo">
                 </b-col>
-                <b-col>
+                <b-col md="4">
                     <b-row>
                         <b-col>
                             <i class="fab fa-instagram"></i>
@@ -21,7 +21,7 @@
                         </b-col>
                     </b-row>
                 </b-col>
-                <b-col>
+                <b-col md="4">
                     <b-nav vertical>
                         <b-nav-item>
                             <router-link to="/">
