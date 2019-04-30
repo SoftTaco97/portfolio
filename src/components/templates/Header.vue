@@ -1,9 +1,9 @@
 <template>
     <header>
         <b-container fluid>
-            <appNav :isHome=false :isOther=true />
-            <b-row>
-                <h1>{{title}}</h1>
+            <appNav />
+            <b-row class="text-center">
+                <h1 class="display-4 w-100">{{title}}</h1>
             </b-row>
         </b-container>
     </header>
