@@ -45,10 +45,17 @@ header {
     .container-fluid {
         padding: 0;
     }
+    img {
+        display: none;
+    }
     .navbar {
         background-color: @color2;
         .navbar-brand {
             display: none;
+            a {
+                color: @color3;
+                text-decoration: none;
+            }
         }
     }
     #hero, #nonHero {
@@ -130,6 +137,7 @@ footer {
         }
         #nonHero > .particles-js-canvas-el {
             max-height: 200px;
+            margin-top: -8em;
         }
     }
 
@@ -141,9 +149,9 @@ footer {
 
         #hero {
             height: 350px;
-        }
-        h1 {
-            padding-top: 5em;
+            h1 {
+                padding-top: 3em;
+            }
         }
     }
 }
@@ -153,14 +161,43 @@ footer {
     body {
         font-size: 18px;
 
+        .particles-js-canvas-el {
+            margin-top: -25em;
+        }
         #nonHero > .particles-js-canvas-el {
             max-height: 350px;
+            margin-top: -15em;
         }
     }
 
     header {
         #hero {
             height: 750px;
+            h1 {
+                display: none;
+            }
+        }
+        .navbar {
+            .navbar-brand {
+                display: block;
+            }
+        }
+        img {
+            margin-top: 5em;
+            display: block;
+            max-width: 100%;
+            height: 300px;
+            margin-left: 38.5%;
+        }
+
+        nav {
+            .nav {
+                display: flex;
+                flex-direction: row !important;
+                li {
+                    flex: 1;
+                }
+            }
         }
     }
 }

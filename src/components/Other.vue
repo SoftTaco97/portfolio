@@ -7,7 +7,7 @@
                     <h2 class="display-4">Some Title</h2>
                 </b-row>
                 <b-row>
-                    <b-col>
+                    <b-col lg="10" offset-lg="1">
                         <p class="lead">
                             Some text Some text
                             Some text Some text

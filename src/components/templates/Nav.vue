@@ -1,6 +1,10 @@
 <template>
     <b-navbar toggleable="lg">
-        <b-navbar-brand href="#">Martinez Designs</b-navbar-brand>
+        <b-navbar-brand class="lead">
+            <router-link to="/">
+                Martinez Designs
+            </router-link>
+        </b-navbar-brand>
         <b-navbar-toggle class="ml-auto" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
             <b-nav class="ml-auto text-center" vertical>

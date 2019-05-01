@@ -32,11 +32,18 @@ header {
 header .container-fluid {
   padding: 0;
 }
+header img {
+  display: none;
+}
 header .navbar {
   background-color: #FFF;
 }
 header .navbar .navbar-brand {
   display: none;
+}
+header .navbar .navbar-brand a {
+  color: #000;
+  text-decoration: none;
 }
 header #hero,
 header #nonHero {
@@ -108,6 +115,7 @@ footer div.container-fluid .col-md-4 {
   }
   body #nonHero > .particles-js-canvas-el {
     max-height: 200px;
+    margin-top: -8em;
   }
   header #hero,
   header #nonHero {
@@ -116,18 +124,42 @@ footer div.container-fluid .col-md-4 {
   header #hero {
     height: 350px;
   }
-  header h1 {
-    padding-top: 5em;
+  header #hero h1 {
+    padding-top: 3em;
   }
 }
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
   }
+  body .particles-js-canvas-el {
+    margin-top: -25em;
+  }
   body #nonHero > .particles-js-canvas-el {
     max-height: 350px;
+    margin-top: -15em;
   }
   header #hero {
     height: 750px;
+  }
+  header #hero h1 {
+    display: none;
+  }
+  header .navbar .navbar-brand {
+    display: block;
+  }
+  header img {
+    margin-top: 5em;
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    margin-left: 38.5%;
+  }
+  header nav .nav {
+    display: flex;
+    flex-direction: row !important;
+  }
+  header nav .nav li {
+    flex: 1;
   }
 }
