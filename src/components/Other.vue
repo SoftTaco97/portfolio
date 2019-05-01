@@ -4,44 +4,46 @@
         <main>
             <b-container fluid>
                 <b-row class="text-center">
-                    <h2 class="display-4 w-100">Some Title</h2>
+                    <h2 class="display-4">Some Title</h2>
                 </b-row>
-                <b-row class="text-center">
-                    <p class="lead w-100">
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some textSome text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                        Some text Some text
-                    </p>
+                <b-row>
+                    <b-col>
+                        <p class="lead">
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some textSome text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                            Some text Some text
+                        </p>
+                    </b-col>
                 </b-row>
             </b-container>
         </main>

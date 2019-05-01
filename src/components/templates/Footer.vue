@@ -2,27 +2,24 @@
     <footer>
         <b-container fluid>
             <b-row>
-                <b-col md="4">
+                <b-col md="4" class="text-center">
                     <img src="https://martinezdesigns.net/images/favicon.png" alt="logo">
                 </b-col>
-                <b-col md="4">
+                <b-col md="4" class="text-center">
                     <b-row>
                         <b-col>
-                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/martinez_designs/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </b-col>
                         <b-col>
-                            <i class="fab fa-instagram"></i>
+                            <a href="https://github.com/SoftTaco97/" target="_blank"><i class="fab fa-github"></i></a>
                         </b-col>
                         <b-col>
-                            <i class="fab fa-instagram"></i>
-                        </b-col>
-                        <b-col>
-                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.linkedin.com/in/jared-martinez-1312b0168" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </b-col>
                     </b-row>
                 </b-col>
                 <b-col md="4">
-                    <b-nav vertical>
+                    <b-nav vertical class="w-100 text-center">
                         <b-nav-item>
                             <router-link to="/">
                                 Home

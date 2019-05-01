@@ -5,13 +5,129 @@
 */
 /* Palette */
 body {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   background-color: #FFF;
 }
+body .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body a {
+  color: #00A0B0;
+}
+body a:hover {
+  color: #008997;
+}
+body .particles-js-canvas-el {
+  margin-top: -8em;
+}
+body #nonHero > .particles-js-canvas-el {
+  max-height: 150px;
+}
+header {
+  background-color: #00A0B0;
+  color: #FFF;
+}
+header .container-fluid {
+  padding: 0;
+}
+header .navbar {
+  background-color: #FFF;
+}
+header .navbar .navbar-brand {
+  display: none;
+}
+header #hero,
+header #nonHero {
+  border-top: 0.5em solid #008997;
+  padding: .5em;
+}
+header #hero {
+  height: 250px;
+}
+header h1 {
+  font-size: 2.25em !important;
+  padding: .5em;
+  padding-top: .75em;
+}
+main {
+  border-top: 0.5em solid #008997;
+}
+main div.container-fluid h2 {
+  font-size: 2em !important;
+  padding: 1em;
+  padding-bottom: .25em;
+  border-bottom: solid lightgray 1px;
+  width: 90%;
+  margin-left: 5%;
+}
 main div.container-fluid img {
   max-width: 100%;
+  padding: .5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+main div.container-fluid p {
+  line-height: 1.75;
+}
+footer {
+  margin-top: 2em;
+  border-top: 0.5em solid #008997;
 }
 footer div.container-fluid img {
+  text-align: center;
   max-width: 100%;
+  height: 200px;
+}
+footer div.container-fluid .fab {
+  font-size: 2em;
+  text-align: center;
+}
+footer div.container-fluid .row:nth-of-type(2) {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+footer div.container-fluid h2 {
+  background-color: #00A0B0;
+  color: #FFF;
+  font-size: 1.25em;
+  padding: 1em;
+  margin-bottom: -1em;
+}
+footer div.container-fluid .col-md-4 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+  body .particles-js-canvas-el {
+    margin-top: -16em;
+  }
+  body #nonHero > .particles-js-canvas-el {
+    max-height: 200px;
+  }
+  header #hero,
+  header #nonHero {
+    padding: 1em;
+  }
+  header #hero {
+    height: 350px;
+  }
+  header h1 {
+    padding-top: 5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  body #nonHero > .particles-js-canvas-el {
+    max-height: 350px;
+  }
+  header #hero {
+    height: 750px;
+  }
 }
