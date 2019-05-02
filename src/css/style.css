@@ -147,6 +147,16 @@ footer div.container-fluid .col-md-4 {
   }
   header .navbar .navbar-brand {
     display: block;
+    margin-left: 1em;
+    padding: 1em;
+  }
+  header .navbar .navbar-brand a {
+    border-bottom: 1px solid #FFF;
+    transition: all .5s;
+  }
+  header .navbar .navbar-brand a:hover {
+    border-bottom: 1px solid #000;
+    transition: all .5s;
   }
   header img {
     margin-top: 5em;
@@ -156,10 +166,37 @@ footer div.container-fluid .col-md-4 {
     margin-left: 38.5%;
   }
   header nav .nav {
+    margin-right: 1em;
     display: flex;
     flex-direction: row !important;
   }
   header nav .nav li {
     flex: 1;
+    padding: 1em;
+  }
+  header nav .nav li a {
+    border-bottom: #FFF solid 1px;
+    transition: all .5s;
+    padding: 0;
+  }
+  header nav .nav li a:hover {
+    transition: all .5s;
+    border-bottom: #008997 solid 1px;
+  }
+  main div.container-fluid {
+    padding: 2em;
+  }
+  main div.container-fluid h2 {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+  }
+  main div.container-fluid p {
+    line-height: 2;
+  }
+  footer ul li a {
+    text-decoration: none;
+  }
+  footer ul li a:hover {
+    text-decoration: underline;
   }
 }

@@ -9,6 +9,7 @@
 @color2: #FFF;
 @color3: #000;
 
+// body
 body {
     font-size: 16px;
     color: @color3;
@@ -37,7 +38,6 @@ body {
         max-height: 150px;
     }
 }
-
 // Header
 header {
     background-color: @color1;
@@ -71,7 +71,6 @@ header {
         padding-top: .75em;
     }
 }
-
 // Main 
 main {
     border-top: .5em solid darken(@color1, 5%);
@@ -160,7 +159,6 @@ footer {
 @media only screen and (min-width: 1024px) {
     body {
         font-size: 18px;
-
         .particles-js-canvas-el {
             margin-top: -25em;
         }
@@ -180,6 +178,16 @@ footer {
         .navbar {
             .navbar-brand {
                 display: block;
+                margin-left: 1em;
+                padding: 1em;
+                a {
+                    border-bottom: 1px solid @color2;
+                    transition: all .5s;
+                    &:hover {
+                        border-bottom: 1px solid @color3;
+                        transition: all .5s;
+                    }
+                }
             }
         }
         img {
@@ -192,10 +200,47 @@ footer {
 
         nav {
             .nav {
+                margin-right: 1em;
                 display: flex;
                 flex-direction: row !important;
                 li {
                     flex: 1;
+                    padding: 1em;
+                    a {
+                        border-bottom: @color2 solid 1px;
+                        transition: all .5s;
+                        padding: 0;
+                        &:hover {
+                            transition: all .5s;
+                            border-bottom: darken(@color1, 5%) solid 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        div.container-fluid {
+            padding: 2em;
+            h2 {
+                margin-bottom: 1.5em;
+                padding-bottom: 1em; 
+            }
+            p {
+                line-height: 2;
+            }
+        }
+    }
+
+    footer {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

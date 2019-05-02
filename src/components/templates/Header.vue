@@ -29,10 +29,10 @@
             particlesJS('nonHero', {
                     "particles": {
                         "number": {
-                            "value": 500,
+                            "value": 200,
                             "density": {
                                 "enable": true,
-                                "value_area": 700
+                                "value_area": 400
                             }
                         },
                         "color": {

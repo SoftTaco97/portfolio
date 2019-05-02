@@ -20,15 +20,11 @@
                 </b-col>
                 <b-col md="4">
                     <b-nav vertical class="w-100 text-center">
-                        <b-nav-item>
-                            <router-link to="/">
-                                Home
-                            </router-link>
+                        <b-nav-item to="/">
+                            Home
                         </b-nav-item>
-                        <b-nav-item>
-                            <router-link to="/other/">
-                                Other
-                            </router-link>
+                        <b-nav-item to="/other/">
+                            Other
                         </b-nav-item>
                     </b-nav>
                 </b-col>

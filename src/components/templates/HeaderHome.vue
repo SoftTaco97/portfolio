@@ -42,10 +42,10 @@
             particlesJS('hero', {
                     "particles": {
                         "number": {
-                            "value": 500,
+                            "value": 200,
                             "density": {
                                 "enable": true,
-                                "value_area": 850
+                                "value_area": 750
                             }
                         },
                         "color": {

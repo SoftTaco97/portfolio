@@ -9,16 +9,12 @@
         <b-collapse id="nav-collapse" is-nav>
             <b-nav class="ml-auto text-center" vertical>
                 <!-- Home Page -->
-                <b-nav-item>
-                    <router-link to="/">
-                        Home
-                    </router-link>
+                <b-nav-item to="/">
+                    Home
                 </b-nav-item>
                 <!-- Other Pages -->
-                <b-nav-item>
-                    <router-link to="/other/">
-                        Other
-                    </router-link>
+                <b-nav-item to="/other/">
+                    Other
                 </b-nav-item>
             </b-nav>
         </b-collapse>
