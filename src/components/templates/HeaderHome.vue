@@ -17,10 +17,10 @@
 
     // Typed JS
     import Typed from 'typed.js';
-
+    
     // Particles JS
     require('particles.js');
-    
+
     export default {
         name: 'appHeader',
         components: {
@@ -36,7 +36,7 @@
                 backDelay: 1000
             }
 
-            const typed = new Typed(".tagline", options);
+            new Typed(".tagline", options);
 
             // Particles JS
             particlesJS('hero', {
@@ -112,11 +112,11 @@
                         "detect_on": "canvas",
                         "events": {
                         "onhover": {
-                            "enable": true,
+                            "enable": false,
                             "mode": "repulse"
                         },
                         "onclick": {
-                            "enable": true,
+                            "enable": false,
                             "mode": "repulse"
                         },
                         "resize": true
