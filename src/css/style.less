@@ -30,11 +30,12 @@ body {
     }
 
     // Particles JS stuff
-    .particles-js-canvas-el {
+    #particles {
         margin-top: -8em;
+        width: 100%;
     }
 
-    #nonHero > .particles-js-canvas-el {
+    #nonHero > #particles {
         max-height: 150px;
     }
 }
@@ -131,10 +132,10 @@ footer {
     body {
         font-size: 17px;
 
-        .particles-js-canvas-el {
+        #particles {
             margin-top: -16em;
         }
-        #nonHero > .particles-js-canvas-el {
+        #nonHero > #particles {
             max-height: 200px;
             margin-top: -8em;
         }
@@ -159,11 +160,11 @@ footer {
 @media only screen and (min-width: 1024px) {
     body {
         font-size: 18px;
-        .particles-js-canvas-el {
+        #particles {
             margin-top: -25em;
         }
-        #nonHero > .particles-js-canvas-el {
-            max-height: 350px;
+        #nonHero > #particles {
+            max-height: auto;
             margin-top: -15em;
         }
     }
