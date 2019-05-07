@@ -19,11 +19,12 @@ body a {
 body a:hover {
   color: #008997;
 }
-body #particles {
+body #particles-js {
   margin-top: -8em;
   width: 100%;
+  overflow: hidden;
 }
-body #nonHero > #particles {
+body #nonHero > #particles-js {
   max-height: 150px;
 }
 header {
@@ -111,10 +112,10 @@ footer div.container-fluid .col-md-4 {
   body {
     font-size: 17px;
   }
-  body #particles {
+  body #particles-js {
     margin-top: -16em;
   }
-  body #nonHero > #particles {
+  body #nonHero > #particles-js {
     max-height: 200px;
     margin-top: -8em;
   }
@@ -133,10 +134,10 @@ footer div.container-fluid .col-md-4 {
   body {
     font-size: 18px;
   }
-  body #particles {
+  body #particles-js {
     margin-top: -25em;
   }
-  body #nonHero > #particles {
+  body #nonHero > #particles-js {
     max-height: auto;
     margin-top: -15em;
   }

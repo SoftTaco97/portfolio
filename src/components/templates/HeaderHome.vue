@@ -6,7 +6,23 @@
                     <h1 class="w-100 display-4">Martinez Designs</h1>
                     <img src="https://martinezdesigns.net/images/favicon.png" alt="logo">
                     <h3 class="lead w-100">I am a <span class="tagline"></span></h3>
-                    <appParticles :value=150 :value_area=1000 />
+                    <vue-particles 
+                        color="#fff"
+                        :particleOpacity="0.7"
+                        :particlesNumber="100"
+                        shapeType="circle"
+                        :particleSize="3"
+                        linesColor="#fff"
+                        :linesWidth="1"
+                        :lineLinked="true"
+                        :lineOpacity="0.4"
+                        :linesDistance="100"
+                        :moveSpeed="2"
+                        :hoverEffect="false"
+                        hoverMode="grab"
+                        :clickEffect="false"
+                        clickMode="none" 
+                    />
                 </b-row>
         </b-container>
     </header>
@@ -16,9 +32,6 @@
     // Nav
     import appNav from './Nav.vue';
 
-    // Particles
-    import appParticles from './Particles.vue';
-
     // Typed JS
     import Typed from 'typed.js';
     
@@ -26,7 +39,6 @@
         name: 'appHeader',
         components: {
             appNav,
-            appParticles
         },
         mounted () {
             // Typed JS
