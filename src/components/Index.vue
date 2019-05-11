@@ -6,21 +6,33 @@
                 <b-row class="text-center">
                     <h2 class="display-4">About Me</h2>
                 </b-row>
-                <b-row class="p-lg-4">
-                    <b-col md="5" offset-lg="1">
-                        <img src="images/jared-martinez.jpg" alt="placeholder">
+                <b-row class="p-md-4">
+                    <b-col md="4" offset-lg="2">
+                        <a href="images/jared-martinez.jpg" data-lightbox="Jared Martinez">
+                            <img src="images/jared-martinez.jpg" alt="Jared Martinez">
+                        </a>
                     </b-col>
                     <b-col md="5" offset-md="1" offset-lg="0">
                         <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas sed tempus urna et pharetra pharetra massa. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Gravida in fermentum et sollicitudin ac. Sed risus pretium quam vulputate dignissim. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Turpis cursus in hac habitasse platea dictumst. Eget duis at tellus at urna. Maecenas sed enim ut sem viverra. Posuere lorem ipsum dolor sit.
+                            Oh man... <em>I have to write stuff?</em> <br>Well, I guess I could talk about my skills and stuff... <em><b>sigh</b></em>
                         </p>
+                        <p class="lead">
+                            I am a Portland Based Web Developer, slash, Software Developer, slash, User Interface designer, slash, <em>a person who is really good at googling things.</em>
+                        </p>
+                        <p class="lead">
+                            I <b>love</b> to learn new things, and am always pushing myself to be better at what I do.
+                        </p>
+                        <p class="lead">
+                            Have a cool project you think I would be perfect for? 
+                        </p>
+                        <b-link href="/contact/" variannt="info" class="lead">Contact me here</b-link>
                     </b-col>
                 </b-row>
                 <b-row>
                     <h2 class="display-4">My Work</h2>
                 </b-row>
                 <b-row class="p-lg-4">
-                    <b-col md="4" offset-md="1" class="pt-lg-5 mt-lg-5">
+                    <b-col md="4" offset-md="1" class="mt-4 pt-md-3 mt-lg-5 pt-lg-5">
                         <b-list-group>
                             <b-list-group-item href="https://myfitofficial.com/">myfitofficial.com</b-list-group-item>
                             <b-list-group-item to="/services/">Made November 2017</b-list-group-item>
@@ -28,19 +40,27 @@
                             <b-list-group-item to="/servces/" active>Read more here</b-list-group-item>
                         </b-list-group>
                     </b-col>
-                    <b-col md="6" offset-md="1">
+                    <b-col md="6" offset-md="1" class="mt-5">
                         <a href="images/myfitofficial-full.png" data-lightbox="myfitofficial">
                             <img src="images/myfitofficial.png">
                         </a>
                     </b-col>
                 </b-row>
                 <b-row class="p-lg-4">
-                    <b-col md="6" offset-md="1">
+                    <b-col md="4" class="mt-5 mobile">
+                        <b-list-group>
+                            <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In The Hole MultiSport</b-list-group-item>
+                            <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>
+                            <b-list-group-item to="/projects/">Ace In The Hole MultiSport was one of my most challengin projects …</b-list-group-item>
+                            <b-list-group-item to="/projects/" active>Read more here</b-list-group-item>
+                        </b-list-group>
+                    </b-col>
+                    <b-col md="6" offset-lg="1" class="mt-5">
                         <a href="images/aceinthehole-full.png" data-lightbox="aceinthehole">
                             <img src="images/aceinthehole.png">
                         </a>
                     </b-col>
-                    <b-col md="4" class="pt-lg-5 mt-lg-5">
+                    <b-col md="4" class="pt-md-5 mt-lg-5 desktop">
                         <b-list-group>
                             <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In The Hole MultiSport</b-list-group-item>
                             <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>
@@ -53,7 +73,7 @@
                     <h2 class="display-4">My Skills</h2>
                 </b-row>
                 <b-row>
-                    <b-col md="10" offset-md="1">
+                    <b-col md="10" offset-md="1" class="p-4">
                         <h5 class="lead">JavaScript</h5>
                         <b-progress :value="95" :max="100" class="mb-3" variant="info"></b-progress>
 
@@ -74,10 +94,10 @@
                     </b-col>
                 </b-row>
                 <b-row>
-                    <h2 class="display-4">Services I Offer</h2>
+                    <h2 class="display-4">Services</h2>
                 </b-row>
                 <b-row class="p-md-5">
-                    <b-col md>
+                    <b-col md class="mt-3">
                         <b-card
                             img-src="images/website-creation.jpg"
                             img-alt="Image"
@@ -91,7 +111,7 @@
                             <b-button to="/services/" variant="info">Learn More</b-button>
                         </b-card>
                     </b-col>
-                    <b-col md>
+                    <b-col md class="mt-3">
                         <b-card
                             img-src="images/website-redesign.jpg"
                             img-alt="Image"
@@ -105,7 +125,7 @@
                             <b-button to="/services/" variant="info">Learn More</b-button>
                         </b-card>
                     </b-col>
-                    <b-col md>
+                    <b-col md class="mt-3">
                         <b-card
                             img-src="images/software.jpg"
                             img-alt="Image"
@@ -127,7 +147,7 @@
                 </b-row>
                 <b-row class="text-center">
                     <b-col>
-                        <h3 class="w-100 lead">Have a project? Let's talk about it.</h3>
+                        <h3 class="w-100 lead mt-4">Have a project? Let's talk about it.</h3>
                         <b-button to="/contact/" variant="info" class="m-5 p-2">
                             Contact
                         </b-button>

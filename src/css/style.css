@@ -27,6 +27,9 @@ body #particles-js {
 body #nonHero > #particles-js {
   max-height: 150px;
 }
+body .desktop {
+  display: none;
+}
 header {
   background-color: #00A0B0;
   color: #FFF;
@@ -73,6 +76,8 @@ main div.container-fluid h2 {
 }
 main div.container-fluid img {
   max-width: 100%;
+}
+main div.container-fluid img[src="images/jared-martinez.jpg"] {
   padding: .5em;
   margin-top: .5em;
   margin-bottom: .5em;
@@ -118,6 +123,12 @@ footer div.container-fluid .col-md-4 {
   body #nonHero > #particles-js {
     max-height: 200px;
     margin-top: -8em;
+  }
+  body .mobile {
+    display: none;
+  }
+  body .desktop {
+    display: block;
   }
   header #hero,
   header #nonHero {
