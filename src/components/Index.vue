@@ -7,12 +7,12 @@
                     <h2 class="display-4">About Me</h2>
                 </b-row>
                 <b-row class="p-md-4">
-                    <b-col md="4" offset-lg="2">
+                    <b-col md="4" offset-lg="1" class="text-center">
                         <a href="images/jared-martinez.jpg" data-lightbox="Jared Martinez">
                             <img src="images/jared-martinez.jpg" alt="Jared Martinez">
                         </a>
                     </b-col>
-                    <b-col md="5" offset-md="1" offset-lg="0">
+                    <b-col md="5" offset-md="1" offset-lg="1" class="mt-2">
                         <p class="lead">
                             Oh man... <em>I have to write stuff?</em> <br>Well, I guess I could talk about my skills and stuff... <em><b>sigh</b></em>
                         </p>
@@ -25,10 +25,10 @@
                         <p class="lead">
                             Have a cool project you think I would be perfect for? 
                         </p>
-                        <b-link href="/contact/" variannt="info" class="lead">Contact me here</b-link>
+                        <b-link to="/contact/" variannt="info" class="lead">Contact me here</b-link>
                     </b-col>
                 </b-row>
-                <b-row>
+                <b-row class="text-center text-md-left">
                     <h2 class="display-4">My Work</h2>
                 </b-row>
                 <b-row class="p-lg-4">
@@ -69,7 +69,7 @@
                         </b-list-group>
                     </b-col>
                 </b-row>
-                <b-row class="text-right">
+                <b-row class="text-center text-md-right">
                     <h2 class="display-4">My Skills</h2>
                 </b-row>
                 <b-row>
@@ -93,7 +93,7 @@
                         <b-progress :value="65" :max="100" class="mb-3" variant="info"></b-progress>
                     </b-col>
                 </b-row>
-                <b-row>
+                <b-row class="text-center text-md-left">
                     <h2 class="display-4">Services</h2>
                 </b-row>
                 <b-row class="p-md-5">
@@ -142,7 +142,7 @@
                         </b-card>
                     </b-col>
                 </b-row>
-                <b-row class="text-right">
+                <b-row class="text-center text-md-right">
                     <h2 class="display-4">Contact</h2>
                 </b-row>
                 <b-row class="text-center">
