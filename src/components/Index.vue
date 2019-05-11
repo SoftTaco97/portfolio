@@ -12,7 +12,7 @@
                             <img src="images/jared-martinez.jpg" alt="Jared Martinez">
                         </a>
                     </b-col>
-                    <b-col md="5" offset-md="1" offset-lg="1" class="mt-2">
+                    <b-col md="5" offset-md="1" class="mt-2">
                         <p class="lead">
                             Oh man... <em>I have to write stuff?</em> <br>Well, I guess I could talk about my skills and stuff... <em><b>sigh</b></em>
                         </p>
