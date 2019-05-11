@@ -12,9 +12,21 @@
                 <b-nav-item to="/">
                     Home
                 </b-nav-item>
-                <!-- Other Pages -->
+                <!-- Projects Page -->
                 <b-nav-item to="/other/">
-                    Other
+                    Projects
+                </b-nav-item>
+                <!-- Clients Page -->
+                <b-nav-item to="/other/">
+                    Clients
+                </b-nav-item>
+                <!-- Services Page -->
+                <b-nav-item to="/other/">
+                    Services
+                </b-nav-item>
+                <!-- Contact Page -->
+                <b-nav-item to="/other/">
+                    Contact
                 </b-nav-item>
             </b-nav>
         </b-collapse>

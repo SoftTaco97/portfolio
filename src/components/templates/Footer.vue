@@ -20,11 +20,25 @@
                 </b-col>
                 <b-col md="4">
                     <b-nav vertical class="w-100 text-center">
+                        <!-- Home Page -->
                         <b-nav-item to="/">
                             Home
                         </b-nav-item>
+                        <!-- Projects Page -->
                         <b-nav-item to="/other/">
-                            Other
+                            Projects
+                        </b-nav-item>
+                        <!-- Clients Page -->
+                        <b-nav-item to="/other/">
+                            Clients
+                        </b-nav-item>
+                        <!-- Services Page -->
+                        <b-nav-item to="/other/">
+                            Services
+                        </b-nav-item>
+                        <!-- Contact Page -->
+                        <b-nav-item to="/other/">
+                            Contact
                         </b-nav-item>
                     </b-nav>
                 </b-col>
@@ -39,7 +53,7 @@
 <script>
     export default {
         name: 'appFooter',
-        data: () => {
+        data () {
             return {
                 currentYear: new Date().getFullYear()
             }

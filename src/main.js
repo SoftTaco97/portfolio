@@ -9,6 +9,8 @@ import BootstrapVue from 'bootstrap-vue'; // Bootstrap
 import 'bootstrap/dist/css/bootstrap.css'; // Bootstrap styles
 import 'bootstrap-vue/dist/bootstrap-vue.css'; // More styles
 import VueParticles from 'vue-particles' // Particles JS
+import 'lightbox2/dist/css/lightbox.min.css'; // Lightbox CSS 
+import 'lightbox2/dist/js/lightbox-plus-jquery.js'; // Lightbox JS
 
 // Project styles / scripts
 import router from './routes/index.js'; // Routes
