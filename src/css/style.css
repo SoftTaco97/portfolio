@@ -85,6 +85,25 @@ main div.container-fluid img[src="images/jared-martinez.jpg"] {
 main div.container-fluid p {
   line-height: 1.75;
 }
+main div.container-fluid .list-group-item.active {
+  background-color: #00A0B0;
+  border: #00A0B0;
+}
+main div.container-fluid .col-md a:hover {
+  text-decoration: none !important;
+}
+main div.container-fluid .col-md .card {
+  box-shadow: 5px 2px 10px 2px lightgrey;
+  color: #000;
+  transition: all .5s;
+}
+main div.container-fluid .col-md .card:hover {
+  margin-top: -1em;
+  transition: all .5s;
+}
+main div.container-fluid .shadow {
+  box-shadow: 5px 2px 10px 2px lightgrey;
+}
 footer {
   margin-top: 2em;
   border-top: 0.5em solid #008997;
@@ -140,6 +159,10 @@ footer div.container-fluid .col-md-4 {
   header #hero h1 {
     padding-top: 3em;
   }
+  main div.container-fluid div.row .about {
+    border-left: 1px solid lightgrey;
+    padding-left: 3em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   body {
@@ -182,6 +205,7 @@ footer div.container-fluid .col-md-4 {
     margin-right: 1em;
     display: flex;
     flex-direction: row !important;
+    box-shadow: 5px 2px 10px 2px lightgrey;
   }
   header nav .nav li {
     flex: 1;
