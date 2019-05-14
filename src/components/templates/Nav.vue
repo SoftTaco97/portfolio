@@ -2,7 +2,7 @@
     <b-navbar toggleable="lg">
         <b-navbar-brand class="lead">
             <router-link to="/">
-                Martinez Designs
+                Martinez Designs <i class="fas fa-laptop-code"></i>
             </router-link>
         </b-navbar-brand>
         <b-navbar-toggle class="ml-auto" target="nav-collapse"></b-navbar-toggle>

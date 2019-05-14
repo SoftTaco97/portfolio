@@ -3,8 +3,7 @@
         <b-container fluid class="w-100">
             <appNav :isHome=true :isOther=false />
                 <b-row class="text-center" id="hero">
-                    <h1 class="w-100 display-4">Martinez Designs</h1>
-                    <img src="https://martinezdesigns.net/images/favicon.png" alt="logo">
+                    <h1 class="w-100 display-4">Martinez Designs <i class="fas fa-laptop-code"></i></h1>
                     <h3 class="lead w-100">I am a <span class="tagline"></span></h3>
                     <vue-particles 
                         color="#fff"

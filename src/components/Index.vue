@@ -8,8 +8,8 @@
                 </b-row>
                 <b-row class="p-md-4">
                     <b-col md="4" offset-md="1" offset-lg="2" class="text-center">
-                        <a href="images/jared-martinez.JPG" data-lightbox="Jared Martinez">
-                            <img src="images/jared-martinez.JPG" alt="Jared Martinez">
+                        <a href="img/jared-martinez.jpg" data-lightbox="Jared Martinez">
+                            <img src="img/jared-martinez.jpg" alt="Jared Martinez">
                         </a>
                     </b-col>
                     <b-col md="5" offset-md="1" offset-lg="0" class="mt-2 about">
@@ -35,14 +35,14 @@
                     <b-col md="4" offset-md="1" class="mt-4 pt-md-3 mt-lg-5 pt-lg-5">
                         <b-list-group>
                             <b-list-group-item href="https://myfitofficial.com/">myfitofficial.com</b-list-group-item>
-                            <b-list-group-item to="/services/">Made November 2017</b-list-group-item>
-                            <b-list-group-item to="/services/">The owner of MyFit came to me wanting …</b-list-group-item>
-                            <b-list-group-item to="/servces/" active>Read more here</b-list-group-item>
+                            <b-list-group-item to="/clients/">Made November 2017</b-list-group-item>
+                            <b-list-group-item to="/clients/">The owner of MyFit came to me wanting …</b-list-group-item>
+                            <b-list-group-item to="/clients/" active>Read more here</b-list-group-item>
                         </b-list-group>
                     </b-col>
                     <b-col md="6" offset-md="1" class="mt-5">
-                        <a href="images/myfitofficial-full.png" data-lightbox="myfitofficial">
-                            <img src="images/myfitofficial.png">
+                        <a href="img/myfitofficial-full.png" data-lightbox="myfitofficial">
+                            <img src="img/myfitofficial.png">
                         </a>
                     </b-col>
                 </b-row>
@@ -56,8 +56,8 @@
                             </b-list-group>
                         </b-col>
                         <b-col md="6" offset-lg="1" class="mt-5">
-                            <a href="images/aceinthehole-full.png" data-lightbox="aceinthehole">
-                                <img src="images/aceinthehole.png">
+                            <a href="img/aceinthehole-full.png" data-lightbox="aceinthehole">
+                                <img src="img/aceinthehole.png">
                             </a>
                         </b-col>
                         <b-col md="4" class="pt-md-5 mt-lg-5 desktop">
@@ -100,7 +100,7 @@
                     <b-col md class="mt-3">
                         <b-link to="/servcies/">
                             <b-card
-                                img-src="images/website-creation.jpg"
+                                img-src="img/website-creation.jpg"
                                 img-alt="Image"
                                 title="Website Creation"
                                 img-top
@@ -116,7 +116,7 @@
                     <b-col md class="mt-3">
                         <b-link to="/services/">
                             <b-card
-                                img-src="images/website-redesign.jpg"
+                                img-src="img/website-redesign.jpg"
                                 img-alt="Image"
                                 title="Website Resdesign"
                                 img-top
@@ -132,7 +132,7 @@
                     <b-col md class="mt-3">
                         <b-link to="/services/">
                             <b-card
-                                img-src="images/software.jpg"
+                                img-src="img/software.jpg"
                                 img-alt="Image"
                                 title="Software Development"
                                 img-top
@@ -158,7 +158,7 @@
                             Contact
                         </b-button>
                         <p class="lead">
-                            <b-link href="mailto:info@martinezdesigns.net">info@martinezdesigns.net</b-link>
+                            <b-link href="mailto:info@martinezdesigns.net">info@martinezdesigns.net &nbsp; <span class="far fa-envelope"></span></b-link>
                         </p>
                     </b-col>
                 </b-row>

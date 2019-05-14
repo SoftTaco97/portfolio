@@ -15,6 +15,9 @@ body {
     color: @color3;
     background-color: @color2;
 
+    h1, h2, h3 {
+        font-family: 'Muli', sans-serif;
+    }
     // Weird BootStrap Styling issue??
     .row {
         margin-left: 0;
@@ -51,14 +54,12 @@ header {
     .container-fluid {
         padding: 0;
     }
-    img {
-        display: none;
-    }
     .navbar {
         background-color: @color2;
         .navbar-brand {
             display: none;
             a {
+                font-family: 'Muli', sans-serif;
                 color: @color3;
                 text-decoration: none;
             }
@@ -221,7 +222,8 @@ footer {
         #hero {
             height: 750px;
             h1 {
-                display: none;
+                margin-top: 3.5em;
+                margin-bottom: 1.5em;
             }
         }
         .navbar {
@@ -238,13 +240,6 @@ footer {
                     }
                 }
             }
-        }
-        img {
-            margin-top: 5em;
-            display: block;
-            max-width: 100%;
-            height: 300px;
-            margin-left: 38.5%;
         }
 
         nav {

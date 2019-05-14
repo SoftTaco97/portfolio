@@ -9,6 +9,11 @@ body {
   color: #000;
   background-color: #FFF;
 }
+body h1,
+body h2,
+body h3 {
+  font-family: 'Muli', sans-serif;
+}
 body .row {
   margin-left: 0;
   margin-right: 0;
@@ -37,9 +42,6 @@ header {
 header .container-fluid {
   padding: 0;
 }
-header img {
-  display: none;
-}
 header .navbar {
   background-color: #FFF;
 }
@@ -47,6 +49,7 @@ header .navbar .navbar-brand {
   display: none;
 }
 header .navbar .navbar-brand a {
+  font-family: 'Muli', sans-serif;
   color: #000;
   text-decoration: none;
 }
@@ -179,7 +182,8 @@ footer div.container-fluid .col-md-4 {
     height: 750px;
   }
   header #hero h1 {
-    display: none;
+    margin-top: 3.5em;
+    margin-bottom: 1.5em;
   }
   header .navbar .navbar-brand {
     display: block;
@@ -193,13 +197,6 @@ footer div.container-fluid .col-md-4 {
   header .navbar .navbar-brand a:hover {
     border-bottom: 1px solid #000;
     transition: all .5s;
-  }
-  header img {
-    margin-top: 5em;
-    display: block;
-    max-width: 100%;
-    height: 300px;
-    margin-left: 38.5%;
   }
   header nav .nav {
     margin-right: 1em;
