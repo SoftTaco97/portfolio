@@ -13,19 +13,19 @@
                     Home
                 </b-nav-item>
                 <!-- Projects Page -->
-                <b-nav-item to="/other/">
+                <b-nav-item to="/projects/">
                     Projects
                 </b-nav-item>
                 <!-- Clients Page -->
-                <b-nav-item to="/other/">
+                <b-nav-item to="/clients/">
                     Clients
                 </b-nav-item>
                 <!-- Services Page -->
-                <b-nav-item to="/other/">
+                <b-nav-item to="/services/">
                     Services
                 </b-nav-item>
                 <!-- Contact Page -->
-                <b-nav-item to="/other/">
+                <b-nav-item to="/contact/">
                     Contact
                 </b-nav-item>
             </b-nav>
