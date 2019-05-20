@@ -17,7 +17,7 @@
                                     id="name"
                                     v-model="form.name"
                                     required
-                                    placeholder="Enter your name"
+                                    placeholder="First and Last Name"
                                 />
                             </b-form-group>
                             <!-- /NAME -->
@@ -34,7 +34,7 @@
                                 v-model="form.email"
                                 type="email"
                                 required
-                                placeholder="Enter email"
+                                placeholder="Email Address"
                             />
                             </b-form-group>
                             <!-- /EMAIL -->
@@ -50,7 +50,7 @@
                                     id="number"
                                     v-model="form.number"
                                     type="text"
-                                    placeholder="Enter number"
+                                    placeholder="Telphone Number"
                                 />
                             </b-form-group>
                             <!-- /NUMBER -->
@@ -67,8 +67,24 @@
                                     v-model="form.subject"
                                     type="text"
                                     placeholder="Subject"
+                                    required
                                 />
                             </b-form-group>
+                            <b-form-group
+                                id="message-group"
+                                label="Message"
+                                label-for="message"
+                                label-sr-only    
+                            >
+                                <b-form-textarea
+                                    id="textarea"
+                                    v-model="form.message"
+                                    placeholder="Message"
+                                    rows="6"
+                                    required
+                                />
+                            </b-form-group>
+
                             <div class='text-center'>
                                 <b-button 
                                 type="submit" 
@@ -79,9 +95,9 @@
                                 </b-button>
                             </div>
                         </b-form>
-                        <p class="lead" v-if="showMessage">
-                            {{message}}
-                        </p>
+                    <b-alert class="lead" variant={{messageVariant}} dismissible v-if="showMessage">
+                        {{message}}
+                    </b-alert>
                     </b-col>
                 </b-row>
             </b-container>
@@ -96,6 +112,9 @@
 
     // Footer
     import appFooter from './templates/Footer.vue';
+
+    // Axios
+    import axios from 'axios';
 
     export default {
         name: 'Other',
@@ -114,9 +133,11 @@
                     email: '',
                     number: '',
                     subject: '',
+                    message: '',
                 },
                 showMessage: false,
-                message: ''
+                message: '',
+                messageVariant: 'danger'
             }
         },
         methods: {
@@ -125,6 +146,84 @@
                 evt.preventDefault();
 
                 // Validating form data
+                const isValid = this.formValidation();
+
+                // Sending event
+                if(isValid.success){
+                    this.sendInfo();
+                    return;
+                }
+
+                this.displayMessage(isValid);
+            },
+            formValidation() {
+                /* variables */
+                const valEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g;
+
+                /* Helper function to structure output data */
+                const output = (success, error, message) => {
+                    return {
+                        success: success,
+                        error: error,
+                        message: message
+                    }
+                }
+
+                if(!this.form.name){
+                    return output(false, 'name', 'Please enter your name');
+                } else if(!this.form.email && !valEmail.test(this.form.email)){
+                    return output(false, 'email', 'Please enter a valid email');
+                } else if(!this.form.subject){
+                    return output(false, 'subject', 'Please enter a subject');
+                } else if(!this.form.message){
+                    return output(false, 'messaqge', 'Please enter a message');
+                }
+
+                return output(true, null, null);
+            },
+            sendInfo(output) {
+                /* Variables */
+                const data = new FormData();
+
+                // Name
+                data.set('name', this.form.name);
+                // Email
+                data.set('email', this.form.email);
+                // Number 
+                data.set('number', this.form.number);
+                // Subject
+                data.set('subject', this.form.subject);
+                // Message
+                data.set('message', this.form.message);
+
+                /* sending form data */
+                axios({
+                    method: 'post',
+                    url: './form.php',
+                    data: data,
+                    config: { 
+                        headers: {
+                            'Content-Type': 'multipart/form-data' 
+                            }
+                        }
+                })
+                .then((response) => {
+                    this.displayMessage({
+                        success: (response.success === 200),
+                        error: response.error,
+                        message: response.message
+                    })
+                })
+                .catch(function (response) {
+                    //handle error
+                    console.log(response);
+                });
+            },
+            displayMessage(ouput){
+                // Showing the message
+                this.showMessage = true;
+                this.message = output.message;
+                this.messageColor = output.success ? 'green' : 'red';
             }
         },
         components: {

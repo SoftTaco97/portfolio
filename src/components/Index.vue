@@ -74,22 +74,22 @@
                 </b-row>
                 <b-row>
                     <b-col md="10" offset-md="1" class="p-4 shadow">
-                        <h5 class="lead">JavaScript</h5>
+                        <h5 class="lead">JavaScript &nbsp;<i class="fab fa-js-square"></i></h5>
                         <b-progress :value="95" :max="100" class="mb-3" variant="info"></b-progress>
 
-                        <h5 class="lead">PHP</h5>
+                        <h5 class="lead">PHP &nbsp;<i class="fab fa-php"></i></i></h5>
                         <b-progress :value="85" :max="100" class="mb-3" variant="info"></b-progress>
 
-                        <h5 class="lead">HTML / CSS</h5>
+                        <h5 class="lead">HTML / CSS &nbsp;<i class="fab fa-html5"></i></h5>
                         <b-progress :value="73" :max="100" class="mb-3" variant="info"></b-progress>
 
-                        <h5 class="lead">WordPress</h5>
+                        <h5 class="lead">WordPress &nbsp;<i class="fab fa-wordpress"></i></h5>
                         <b-progress :value="78" :max="100" class="mb-3" variant="info"></b-progress>
 
-                        <h5 class="lead">Vue JS</h5>
+                        <h5 class="lead">Vue JS &nbsp;<i class="fab fa-vuejs"></i></h5>
                         <b-progress :value="59" :max="100" class="mb-3" variant="info"></b-progress>
 
-                        <h5 class="lead">BootStrap</h5>
+                        <h5 class="lead">BootStrap &nbsp;<i class="fab fa-bootstrap"></i></h5>
                         <b-progress :value="65" :max="100" class="mb-3" variant="info"></b-progress>
                     </b-col>
                 </b-row>

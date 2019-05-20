@@ -37,5 +37,18 @@ const routes = [
 
 // Exporting routes
 export default new Router({
-  routes,
+    routes, // routes
+    scrollBehavior (to, from, savedPosition) { // Scroll behavior
+        return (savedPosition) 
+                ? savedPosition 
+                : (to.hash) 
+                    ? { 
+                        selector: to.hash, 
+                        x: 0, 
+                        y: 0 
+                    } : { 
+                        x: 0, 
+                        y: 0
+                    } 
+    }
 });
