@@ -16,7 +16,6 @@
                                 <b-form-input
                                     id="name"
                                     v-model="form.name"
-                                    required
                                     placeholder="First and Last Name"
                                 />
                             </b-form-group>
@@ -95,10 +94,10 @@
                                 </b-button>
                             </div>
                         </b-form>
-                    <b-alert class="lead" variant="danger" dismissible v-if="showError">
+                    <b-alert class="lead mt-5" variant="danger" dismissible v-model="showError">
                         {{message}}
                     </b-alert>
-                    <b-alert class="lead" variant="success" dismissible v-if="showSuccess">
+                    <b-alert class="lead mt-5" variant="success" dismissible v-model="showSuccess">
                         {{message}}
                     </b-alert>
                     </b-col>
@@ -141,7 +140,6 @@
                 showError: false,
                 showSuccess: false,
                 message: '',
-                messageVariant: 'danger'
             }
         },
         methods: {
@@ -179,7 +177,7 @@
                 } 
                 
                 // email
-                if(!this.form.email && !valEmail.test(this.form.email)){
+                if(!this.form.email || !valEmail.test(this.form.email)){
                     return output(false, 'email', 'Please enter a valid email.');
                 } 
                 
@@ -223,11 +221,7 @@
                 })
                 .then(response => {
                     // Displaying the result
-                    this.displayMessage({
-                        success: (response.success === 200),
-                        error: response.error,
-                        message: response.message
-                    })
+                    this.displayMessage(response);
                 })
                 .catch(() => {
                     //handle error
@@ -239,11 +233,12 @@
                 });
             },
             displayMessage(data){
-                // Showing the message
-                this.showError = data.success ? false : true;
-                this.showSuccess = data.success ? true : false;
+                // showing error if there is one
+                this.showError = !data.success;
+                // Showing success if there is one
+                this.showSuccess = data.success;
+                // Showing message
                 this.message = data.message;
-
             }
         },
         components: {

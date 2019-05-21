@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] !== "POST"){
 } 
 
 // Getting credentials
-require_once ( dirname( __FILE__ ) . 'config.php');
+require_once ( dirname( __FILE__ ) . '/config.php');
 
 /**
  * Class for Form Submissions
