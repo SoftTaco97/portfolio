@@ -197,17 +197,10 @@
                 /* Variables */
                 const data = new FormData();
 
-                // Name
-                data.set('name', this.form.name);
-                // Email
-                data.set('email', this.form.email);
-                // Number 
-                data.set('number', this.form.number);
-                // Subject
-                data.set('subject', this.form.subject);
-                // Message
-                data.set('message', this.form.message);
-
+                // Setting the fields
+                for(let field in this.form){
+                    data.set(field, this.form[field]);
+                }
                 /* sending form data */
                 axios({
                     method: 'post',
@@ -221,7 +214,7 @@
                 })
                 .then(response => {
                     // Displaying the result
-                    this.displayMessage(response);
+                    this.displayMessage(response.data);
                 })
                 .catch(() => {
                     //handle error
@@ -239,6 +232,13 @@
                 this.showSuccess = data.success;
                 // Showing message
                 this.message = data.message;
+
+                // Clearing the input fields if the form was submitted
+                if(data.success){
+                    for(let field in this.form){
+                        this.form[field] = '';
+                    }
+                }
             }
         },
         components: {
