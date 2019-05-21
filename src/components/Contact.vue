@@ -95,7 +95,10 @@
                                 </b-button>
                             </div>
                         </b-form>
-                    <b-alert class="lead" variant={{messageVariant}} dismissible v-if="showMessage">
+                    <b-alert class="lead" variant="danger" dismissible v-if="showError">
+                        {{message}}
+                    </b-alert>
+                    <b-alert class="lead" variant="success" dismissible v-if="showSuccess">
                         {{message}}
                     </b-alert>
                     </b-col>
@@ -135,7 +138,8 @@
                     subject: '',
                     message: '',
                 },
-                showMessage: false,
+                showError: false,
+                showSuccess: false,
                 message: '',
                 messageVariant: 'danger'
             }
@@ -181,7 +185,7 @@
 
                 return output(true, null, null);
             },
-            sendInfo(output) {
+            sendInfo() {
                 /* Variables */
                 const data = new FormData();
 
@@ -214,16 +218,22 @@
                         message: response.message
                     })
                 })
-                .catch(function (response) {
+                .catch(function () {
                     //handle error
-                    console.log(response);
+                    this.displayMessage({
+                        success: false,
+                        error: 'encountered error on server',
+                        message: 'Your message could not be sent at this time. Please try again later.'
+                    })
                 });
             },
-            displayMessage(ouput){
+            displayMessage(output){
                 // Showing the message
-                this.showMessage = true;
-                this.message = output.message;
-                this.messageColor = output.success ? 'green' : 'red';
+                const data = output;
+                this.showError = data.success ? false : true;
+                this.showSuccess = data.success ? true : false;
+                this.message = data.message;
+
             }
         },
         components: {
