@@ -173,14 +173,24 @@
                     }
                 }
 
+                // name
                 if(!this.form.name){
-                    return output(false, 'name', 'Please enter your name');
-                } else if(!this.form.email && !valEmail.test(this.form.email)){
-                    return output(false, 'email', 'Please enter a valid email');
-                } else if(!this.form.subject){
+                    return output(false, 'name', 'Please enter your name.');
+                } 
+                
+                // email
+                if(!this.form.email && !valEmail.test(this.form.email)){
+                    return output(false, 'email', 'Please enter a valid email.');
+                } 
+                
+                // subject
+                if(!this.form.subject){
                     return output(false, 'subject', 'Please enter a subject');
-                } else if(!this.form.message){
-                    return output(false, 'messaqge', 'Please enter a message');
+                } 
+                
+                // message
+                if(!this.form.message){
+                    return output(false, 'message', 'Please enter a message');
                 }
 
                 return output(true, null, null);
@@ -208,17 +218,18 @@
                     config: { 
                         headers: {
                             'Content-Type': 'multipart/form-data' 
-                            }
                         }
+                    }
                 })
-                .then((response) => {
+                .then(response => {
+                    // Displaying the result
                     this.displayMessage({
                         success: (response.success === 200),
                         error: response.error,
                         message: response.message
                     })
                 })
-                .catch(function () {
+                .catch(() => {
                     //handle error
                     this.displayMessage({
                         success: false,
@@ -227,9 +238,8 @@
                     })
                 });
             },
-            displayMessage(output){
+            displayMessage(data){
                 // Showing the message
-                const data = output;
                 this.showError = data.success ? false : true;
                 this.showSuccess = data.success ? true : false;
                 this.message = data.message;
