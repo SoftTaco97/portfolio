@@ -1,6 +1,6 @@
 <template>
     <div>
-        <appHeader title="Clients" />
+        <appHeader title="Projects" />
         <main>
             <b-container fluid>
                 <b-row class="text-center text-md-left" id="myfit">
