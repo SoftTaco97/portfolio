@@ -49,9 +49,9 @@
                 <b-row class="p-lg-4">
                         <b-col md="4" class="mt-5 mobile">
                             <b-list-group>
-                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In The Hole MultiSport</b-list-group-item>
+                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In The Hole Multisport</b-list-group-item>
                                 <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>
-                                <b-list-group-item to="/projects/">Ace In The Hole MultiSport was one of my most challengin projects …</b-list-group-item>
+                                <b-list-group-item to="/projects/">Ace In The Hole Multisport was one of my most challenging projects …</b-list-group-item>
                                 <b-list-group-item to="/projects/" active>Read more here</b-list-group-item>
                             </b-list-group>
                         </b-col>
@@ -77,7 +77,7 @@
                         <h5 class="lead">JavaScript &nbsp;<i class="fab fa-js-square"></i></h5>
                         <b-progress :value="95" :max="100" class="mb-3" variant="info"></b-progress>
 
-                        <h5 class="lead">PHP &nbsp;<i class="fab fa-php"></i></i></h5>
+                        <h5 class="lead">PHP &nbsp;<i class="fab fa-php"></i></h5>
                         <b-progress :value="85" :max="100" class="mb-3" variant="info"></b-progress>
 
                         <h5 class="lead">HTML / CSS &nbsp;<i class="fab fa-html5"></i></h5>
@@ -93,12 +93,12 @@
                         <b-progress :value="65" :max="100" class="mb-3" variant="info"></b-progress>
                     </b-col>
                 </b-row>
-                <b-row class="text-center text-md-left">
+                <b-row class="text-center text-md-left mt-5">
                     <h2 class="display-4">Services</h2>
                 </b-row>
                 <b-row class="p-md-5">
                     <b-col md class="mt-3">
-                        <b-link to="/servcies/">
+                        <b-link to="/services/">
                             <b-card
                                 img-src="img/website-creation.jpg"
                                 img-alt="Image"
@@ -114,7 +114,7 @@
                         </b-link>
                     </b-col>
                     <b-col md class="mt-3">
-                        <b-link to="/services/">
+                        <b-link to="/services/#website-redesign">
                             <b-card
                                 img-src="img/website-redesign.jpg"
                                 img-alt="Image"
@@ -125,12 +125,12 @@
                                     Don’t like how your website looks? I probably won’t like it either. Lets fix it.
                                 </b-card-text>
 
-                                <b-button to="/services/" variant="info">Learn More</b-button>
+                                <b-button to="/services/#website-redesign" variant="info">Learn More</b-button>
                             </b-card>
                         </b-link>
                     </b-col>
                     <b-col md class="mt-3">
-                        <b-link to="/services/">
+                        <b-link to="/services/#software-development">
                             <b-card
                                 img-src="img/software.jpg"
                                 img-alt="Image"
@@ -141,7 +141,7 @@
                                     Have a cool idea? Need a nerd to make it for you? I’m kind of a nerd, <em>so</em>.
                                 </b-card-text>
 
-                                <b-button to="/services/" variant="info">
+                                <b-button to="/services/#software-development" variant="info">
                                     Learn More
                                 </b-button>
                             </b-card>

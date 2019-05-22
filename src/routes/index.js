@@ -19,6 +19,12 @@ import contact from '../components/Contact.vue';
 // services page
 import services from '../components/Services.vue';
 
+// clients page
+import clients from '../components/Clients.vue';
+
+// projects page
+import projects from '../components/Projects.vue';
+
 // 404 pages
 import app404 from '../components/404.vue';
 
@@ -33,8 +39,16 @@ const routes = [
         component: contact
     },
     {
-        path: '/services',
+        path: '/services/',
         component: services
+    },
+    {
+        path: '/clients/',
+        component: clients
+    },
+    {
+        path: '/projects/',
+        component: projects
     },
     {
         path: '*',

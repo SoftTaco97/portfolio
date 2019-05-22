@@ -40,7 +40,7 @@
                                     $ 1000
                                     <b-badge 
                                         v-b-tooltip.hover 
-                                        title="Small eCommerce shops are limited to 10 pages, 15 products, 1 contact form, and 3 revisions. Anything additional is subject to additional charge."
+                                        title="Small eCommerce websites are limited to 10 pages, 15 products, 1 contact form, and 3 revisions. Anything additional is subject to additional charge."
                                     >
                                         ?
                                     </b-badge>
