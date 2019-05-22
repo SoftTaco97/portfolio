@@ -5,7 +5,7 @@
             <b-container fluid>
                 <b-row>
                     <b-col lg="10" offset-lg="1" class="p-4">
-                        <b-form @submit="onSubmit">
+                        <b-form @submit="onSubmit" v-if="!showSuccess">
                             <!-- Name -->
                             <b-form-group 
                                 id="name-group" 
@@ -92,6 +92,9 @@
                                 >
                                     Send
                                 </b-button>
+                                <b-form-text class="pt-4">
+                                    We promise to never share your information with anyone.
+                                </b-form-text>
                             </div>
                         </b-form>
                     <b-alert class="lead mt-5" variant="danger" dismissible v-model="showError">

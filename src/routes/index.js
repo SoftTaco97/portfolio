@@ -13,8 +13,11 @@ Vue.use(Meta);
 // home page
 import index from '../components/Index.vue';
 
-// contact pages
+// contact page
 import contact from '../components/Contact.vue';
+
+// services page
+import services from '../components/Services.vue';
 
 // 404 pages
 import app404 from '../components/404.vue';
@@ -28,6 +31,10 @@ const routes = [
     {
         path: '/contact/',
         component: contact
+    },
+    {
+        path: '/services',
+        component: services
     },
     {
         path: '*',
