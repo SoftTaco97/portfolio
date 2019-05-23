@@ -6,8 +6,8 @@
                 <b-row class="text-center">
                     <h2 class="display-4">About Me</h2>
                 </b-row>
-                <b-row class="p-md-4">
-                    <b-col md="4" offset-md="1" offset-lg="2" class="text-center">
+                <b-row class="pt-4">
+                    <b-col md="4" offset-md="1" offset-lg="2" class="mb-4 mb-md-0 text-center">
                         <a href="img/jared-martinez.jpg" data-lightbox="Jared Martinez">
                             <img src="img/jared-martinez.jpg" alt="Jared Martinez">
                         </a>
@@ -28,13 +28,16 @@
                         <b-link to="/contact/" variannt="info" class="lead">Contact me here</b-link>
                     </b-col>
                 </b-row>
-                <b-row class="text-center text-md-left">
+                <b-row class="pt-4 text-center text-md-left">
                     <h2 class="display-4">My Work</h2>
                 </b-row>
                 <b-row class="p-lg-4">
-                    <b-col md="4" offset-md="1" class="mt-4 pt-md-3 mt-lg-5 pt-lg-5">
-                        <b-list-group>
-                            <b-list-group-item href="https://myfitofficial.com/">myfitofficial.com</b-list-group-item>
+                    <b-col md="4" offset-md="1">
+                        <h2 class="pt-5 pt-md-4 text-center">MyFit</h2>
+                        <b-list-group class="mt-5 mt-md-0">
+                            <b-list-group-item href="https://myfitofficial.com/" class="text-info">
+                                MyFit
+                            </b-list-group-item>
                             <b-list-group-item to="/clients/">Made November 2017</b-list-group-item>
                             <b-list-group-item to="/clients/">The owner of MyFit came to me wanting …</b-list-group-item>
                             <b-list-group-item to="/clients/" active>Read more here</b-list-group-item>
@@ -48,23 +51,29 @@
                 </b-row>
                 <b-row class="p-lg-4">
                         <b-col md="4" class="mt-5 mobile">
-                            <b-list-group>
-                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In The Hole Multisport</b-list-group-item>
+                            <h2 class="text-center">Ace In The Hole</h2>
+                            <b-list-group class="mt-5">
+                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" class="text-info">
+                                    Ace In The Hole Multisport
+                                </b-list-group-item>
                                 <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>
                                 <b-list-group-item to="/projects/">Ace In The Hole Multisport was one of my most challenging projects …</b-list-group-item>
                                 <b-list-group-item to="/projects/" active>Read more here</b-list-group-item>
                             </b-list-group>
                         </b-col>
-                        <b-col md="6" offset-lg="1" class="mt-5">
+                        <b-col md="6" offset-lg="1" class="mt-5 pt-3">
                             <a href="img/aceinthehole-full.png" data-lightbox="aceinthehole">
                                 <img src="img/aceinthehole.png">
                             </a>
                         </b-col>
-                        <b-col md="4" class="pt-md-5 mt-lg-5 desktop">
+                        <b-col md="4" class="desktop">
+                            <h2>Ace In The Hole</h2>
                             <b-list-group>
-                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In The Hole MultiSport</b-list-group-item>
+                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" class="text-info">
+                                    Ace In The Hole Multisport
+                                </b-list-group-item>
                                 <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>
-                                <b-list-group-item to="/projects/">Ace In The Hole MultiSport was one of my most challening projects …</b-list-group-item>
+                                <b-list-group-item to="/projects/">Ace In The Hole Multisport was one of my most challening projects …</b-list-group-item>
                                 <b-list-group-item to="/projects/" active>Read more here</b-list-group-item>
                             </b-list-group>
                         </b-col>
@@ -72,7 +81,7 @@
                 <b-row class="text-center text-md-right">
                     <h2 class="display-4">My Skills</h2>
                 </b-row>
-                <b-row>
+                <b-row class="pt-4">
                     <b-col md="10" offset-md="1" class="p-4 shadow">
                         <h5 class="lead">JavaScript &nbsp;<i class="fab fa-js-square"></i></h5>
                         <b-progress :value="95" :max="100" class="mb-3" variant="info"></b-progress>
@@ -148,13 +157,13 @@
                         </b-link>
                     </b-col>
                 </b-row>
-                <b-row class="text-center text-md-right">
+                <b-row class="pt-4 text-center text-md-right">
                     <h2 class="display-4">Contact</h2>
                 </b-row>
                 <b-row class="text-center">
                     <b-col>
                         <h3 class="w-100 lead mt-4">Have a project? Let's talk about it.</h3>
-                        <b-button to="/contact/" variant="info" class="m-5 p-2">
+                        <b-button to="/contact/" variant="info" class="lead m-5 p-2 pl-5 pr-5">
                             Contact
                         </b-button>
                         <p class="lead">

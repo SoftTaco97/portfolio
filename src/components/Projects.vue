@@ -12,8 +12,10 @@
                             <img src="img/aceinthehole.png">
                         </a>
                         <b-list-group class="mt-5">
-                            <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Ace In the Hole Multisport</b-list-group-item>
-                            <b-list-group-item to="/clients/">Made January 2019</b-list-group-item>
+                            <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" class="text-info">
+                                Ace In The Hole Multisport
+                            </b-list-group-item>
+                            <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Made January 2019</b-list-group-item>
                         </b-list-group>
                     </b-col>
                     <b-col lg="5" offset-lg="1">

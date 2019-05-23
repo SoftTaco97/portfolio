@@ -39,10 +39,11 @@
                                 <b-badge variant="info" class="ml-4 mt-3 mt-md-0 ml-md-0">
                                     $ 1000
                                     <b-badge 
+                                        variant="info"
                                         v-b-tooltip.hover 
                                         title="Small eCommerce websites are limited to 10 pages, 15 products, 1 contact form, and 3 revisions. Anything additional is subject to additional charge."
                                     >
-                                        ?
+                                        &#9432;
                                     </b-badge>
                                 </b-badge>
                             </b-list-group-item>
@@ -51,13 +52,17 @@
                                 to="/contact/"
                             >
                                 Small business websites
-                                <b-badge variant="info" class="ml-4 mt-3 mt-md-0 ml-md-0">
+                                <b-badge 
+                                    variant="info" 
+                                    class="ml-4 mt-3 mt-md-0 ml-md-0"
+                                >
                                     $ 750
                                     <b-badge 
+                                        variant="info"
                                         v-b-tooltip.hover 
                                         title="Small business websites are limited to 10 pages, 3 contact forms, and 3 revisions. Anything additional is subject to additional charge."
                                     >
-                                        ?
+                                        &#9432;
                                     </b-badge>
                                 </b-badge>
                             </b-list-group-item>
@@ -69,10 +74,11 @@
                                 <b-badge variant="info" class="mt-3 mt-md-0">
                                     $ 80 Per Hour
                                     <b-badge 
+                                        variant="info"
                                         v-b-tooltip.hover 
                                         title="Large eCommerce sites will be quoted at 80 dollars an hour spent on the project."
                                     >
-                                        ?
+                                        &#9432;
                                     </b-badge>
                                 </b-badge>
                             </b-list-group-item>
@@ -110,10 +116,11 @@
                                 <b-badge variant="info" class="mt-3 mt-md-0">
                                     $ 75 Per Hour
                                     <b-badge 
+                                        variant="info"
                                         v-b-tooltip.hover 
                                         title="Website redesign projects will be quoted at 75 dollars an hour spent on the project."
                                     >
-                                        ?
+                                        &#9432;
                                     </b-badge>
                                 </b-badge>
                             </b-list-group-item>
@@ -156,10 +163,11 @@
                                 <b-badge variant="info" class="mt-3 mt-md-0">
                                     $ 100 Per Hour
                                     <b-badge 
+                                        variant="info"
                                         v-b-tooltip.hover 
                                         title="Software Development projects will be quoted at 100 dollars an hour spent on the project."
                                     >
-                                        ?
+                                        &#9432;
                                     </b-badge>
                                 </b-badge>
                             </b-list-group-item>
