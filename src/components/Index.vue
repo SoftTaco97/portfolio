@@ -127,7 +127,7 @@
                             <b-card
                                 img-src="img/website-redesign.jpg"
                                 img-alt="Image"
-                                title="Website Resdesign"
+                                title="Website Redesign"
                                 img-top
                             >
                                 <b-card-text>
