@@ -3,7 +3,7 @@
         <b-container fluid>
             <b-row>
                 <b-col md="4" class="text-center">
-                    <img src="https://martinezdesigns.net/images/favicon.png" alt="logo">
+                    <img src="img/favicon.png" alt="logo">
                 </b-col>
                 <b-col md="4" class="text-center">
                     <b-row>
