@@ -26,7 +26,7 @@
                             This made her a perfect candidate for WordPress.
                         </p>
                         <p class="lead">
-                            I used a premade theme from the WordPress market place, and modified to better fit the client's needs. <br>
+                            I used a pre-made theme from the WordPress market place, and modified to better fit the client's needs. <br>
                             This project took roughly ten hours, including meeting times.
                         </p>
                     </b-col>

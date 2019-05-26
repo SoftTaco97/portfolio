@@ -74,7 +74,7 @@
                             The project was made in collaboration with a remote web developer based in Florida.<br>
                         </p>
                         <p class="lead">
-                            This web application utitlizes JavaScript, jQuery, HTML and CSS for its functionality.
+                            This web application utilizes JavaScript, jQuery, HTML and CSS for its functionality.
                         </p>
                     </b-col>
                     <b-col lg="4" offset-lg="1" class="d-none d-lg-block">
