@@ -5,7 +5,7 @@
                 <b-col md="4" class="text-center">
                     <img src="img/favicon.png" alt="logo">
                 </b-col>
-                <b-col md="4" class="text-center">
+                <b-col md="4" class="text-center mt-5">
                     <b-row>
                         <b-col>
                             <a href="https://www.instagram.com/martinez_designs/" target="_blank"><i class="fab fa-instagram"></i></a>
