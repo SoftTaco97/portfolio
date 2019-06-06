@@ -4,7 +4,7 @@
         <main>
             <b-container fluid>
                 <b-row>
-                    <b-col lg="10" offset-lg="1" class="p-4">
+                    <b-col md="7" offset-lg="1" class="p-4">
                         <b-form @submit="onSubmit" v-if="!showSuccess">
                             <!-- Name -->
                             <b-form-group 
@@ -103,6 +103,14 @@
                     <b-alert class="lead mt-5" variant="success" dismissible v-model="showSuccess">
                         {{message}}
                     </b-alert>
+                    </b-col>
+                    <b-col md="3" class="mt-3 mb-4 mb-md-0 text-center info-box">
+                        <a href="img/jared-martinez.jpg" data-lightbox="Jared Martinez">
+                            <img src="img/jared-martinez.jpg" alt="Jared Martinez" class="rounded-circle">
+                        </a>
+                        <p class="lead p-5">
+                            <b-link href="mailto:info@martinezdesigns.net">info@martinezdesigns.net &nbsp; <span class="far fa-envelope"></span></b-link>
+                        </p>
                     </b-col>
                 </b-row>
             </b-container>

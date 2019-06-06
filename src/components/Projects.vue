@@ -16,7 +16,7 @@
                                 Ace In The Hole Multisport
                             </b-list-group-item>
                             <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/">Made January 2019</b-list-group-item>
-                            <b-list-group-item href="https://github.com/SoftTaco97/aceinthehole" class="text-info">Browse the code</b-list-group-item>
+                            <b-list-group-item href="https://github.com/SoftTaco97/aceinthehole" class="text-info">Browse the code &nbsp; <i class="fas fa-code"></i></b-list-group-item>
                         </b-list-group>
                     </b-col>
                     <b-col lg="5" offset-lg="1">
@@ -62,7 +62,7 @@
                                 Giphy Search
                             </b-list-group-item>
                             <b-list-group-item href="/giphy-search/">Made July 2018</b-list-group-item>
-                            <b-list-group-item href="https://github.com/v1st/Giphy-Search" class="text-info">Browse the code</b-list-group-item>
+                            <b-list-group-item href="https://github.com/v1st/Giphy-Search" class="text-info">Browse the code  &nbsp; <i class="fas fa-code"></i></b-list-group-item>
                         </b-list-group>
                     </b-col>
                     <b-col lg="5" offset-lg="1">
@@ -86,7 +86,7 @@
                                 Giphy Search
                             </b-list-group-item>
                             <b-list-group-item href="/giphy-search/">Made July 2018</b-list-group-item>
-                            <b-list-group-item href="https://github.com/v1st/Giphy-Search" class="text-info">Browse the code</b-list-group-item>
+                            <b-list-group-item href="https://github.com/v1st/Giphy-Search" class="text-info">Browse the code &nbsp; <i class="fas fa-code"></i></b-list-group-item>
                         </b-list-group>
                     </b-col>
                 </b-row>

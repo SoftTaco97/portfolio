@@ -7,12 +7,12 @@
                     <h2 class="display-4">About Me</h2>
                 </b-row>
                 <b-row class="pt-4">
-                    <b-col md="4" offset-md="1" offset-lg="2" class="mb-4 mb-md-0 text-center">
+                    <b-col md="4" offset-md="1" offset-lg="1" class="mb-4 mb-md-0 text-center">
                         <a href="img/jared-martinez.jpg" data-lightbox="Jared Martinez">
-                            <img src="img/jared-martinez.jpg" alt="Jared Martinez">
+                            <img src="img/jared-martinez.jpg" alt="Jared Martinez" class="rounded-circle">
                         </a>
                     </b-col>
-                    <b-col md="5" offset-md="1" offset-lg="0" class="mt-2 about">
+                    <b-col md="6" offset-md="1" offset-lg="0" class="mt-2 about">
                         <p class="lead">
                             Oh man... <em>I have to write stuff?</em> <br>Well, I guess I could talk about my skills and stuff... <em><b>sigh</b></em>
                         </p>
