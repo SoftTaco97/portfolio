@@ -4,6 +4,7 @@
 import Vue from 'vue'; // Vue
 import VueRouter from 'vue-router'; // Vue Router
 import BootstrapVue from 'bootstrap-vue'; // Bootstrap
+import VueAnalytics from 'vue-analytics' // Google Analytics
 
 // Third party styles / scripts 
 import 'jquery/dist/jquery.js'; // jQuery
@@ -21,6 +22,9 @@ import './css/style.css'; // Main styles
 Vue.use(BootstrapVue);
 Vue.use(VueRouter);
 Vue.use(VueParticles);
+Vue.use(VueAnalytics, {
+  id: 'UA-119888694-1'
+});
 
 // Production setting - I think
 Vue.config.productionTip = false

@@ -35,7 +35,7 @@
                     <b-col md="4" offset-md="1">
                         <h2 class="pt-5 pt-md-4 text-center">MyFit</h2>
                         <b-list-group class="mt-5 mt-md-0">
-                            <b-list-group-item href="https://myfitofficial.com/" class="text-info">
+                            <b-list-group-item href="https://myfitofficial.com/" class="text-info" target="_blank">
                                 MyFit
                             </b-list-group-item>
                             <b-list-group-item to="/clients/">Made November 2017</b-list-group-item>
@@ -53,7 +53,7 @@
                         <b-col md="4" class="mt-5 mobile">
                             <h2 class="text-center">Ace In The Hole</h2>
                             <b-list-group class="mt-5">
-                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" class="text-info">
+                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" target="_blank" class="text-info">
                                     Ace In The Hole Multisport
                                 </b-list-group-item>
                                 <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>
@@ -69,7 +69,7 @@
                         <b-col md="4" class="desktop">
                             <h2>Ace In The Hole</h2>
                             <b-list-group>
-                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" class="text-info">
+                                <b-list-group-item href="https://jaredmartinez.webhostingforstudents.com/cas222/" target="_blank" class="text-info">
                                     Ace In The Hole Multisport
                                 </b-list-group-item>
                                 <b-list-group-item to="/projects/">Made January 2019</b-list-group-item>

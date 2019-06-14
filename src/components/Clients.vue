@@ -12,8 +12,8 @@
                             <img src="img/myfitofficial.png">
                         </a>
                         <b-list-group class="mt-5">
-                            <b-list-group-item href="https://myfitofficial.com/" class="text-info">MyFit</b-list-group-item>
-                            <b-list-group-item href="https://myfitofficial.com/">Made November 2017</b-list-group-item>
+                            <b-list-group-item href="https://myfitofficial.com/" class="text-info" target="_blank">MyFit</b-list-group-item>
+                            <b-list-group-item href="https://myfitofficial.com/" target="_blank">Made November 2017</b-list-group-item>
                         </b-list-group>
                     </b-col>
                     <b-col lg="5" offset-lg="1">

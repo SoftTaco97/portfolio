@@ -57,6 +57,11 @@
             return {
                 currentYear: new Date().getFullYear()
             }
+        },
+        mounted() {
+            const hash = window.location.hash.replace(/[#\/]/g, '');
+            const path = (hash)? '/' + hash + '/' : window.location.pathname;
+            this.$ga.page(path);
         }
     }
 </script>
