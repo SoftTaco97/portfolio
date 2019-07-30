@@ -78,8 +78,8 @@ class FormSubmission
      */
     private function send() 
     {
-        // making sure email variable is defined
-        defined('TO_EMAIL') && defined('FROM_EMAIL') || output(false, '', 'Unable to send the message at this time. Please try again later.');
+        // making sure email variables are defined
+        defined('TO_EMAIL') && defined('FROM_EMAIL') || $this->output(false, '', 'Unable to send the message at this time. Please try again later.');
 
         // Structuring and escaping all of bad stuff
         $this->structure_content();
