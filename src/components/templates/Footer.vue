@@ -32,10 +32,6 @@
                         <b-nav-item to="/clients/">
                             Clients
                         </b-nav-item>
-                        <!-- Services Page -->
-                        <b-nav-item to="/services/">
-                            Services
-                        </b-nav-item>
                         <!-- Contact Page -->
                         <b-nav-item to="/contact/">
                             Contact

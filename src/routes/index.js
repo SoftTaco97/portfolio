@@ -16,9 +16,6 @@ import index from '../components/Index.vue';
 // contact page
 import contact from '../components/Contact.vue';
 
-// services page
-import services from '../components/Services.vue';
-
 // clients page
 import clients from '../components/Clients.vue';
 
@@ -37,10 +34,6 @@ const routes = [
     {
         path: '/contact/',
         component: contact
-    },
-    {
-        path: '/services/',
-        component: services
     },
     {
         path: '/clients/',

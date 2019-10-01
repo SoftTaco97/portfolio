@@ -83,23 +83,19 @@
                 </b-row>
                 <b-row class="pt-4">
                     <b-col md="10" offset-md="1" class="p-4 shadow">
-                        <h5 class="lead">JavaScript &nbsp;<i class="fab fa-js-square"></i></h5>
-                        <b-progress :value="95" :max="100" class="mb-3" variant="info"></b-progress>
+                        <app-progress title="JavaScript" icon="fab fa-js-square" :progress=95 />
+                        
+                        <app-progress title="Node.js" icon="fab fa-node-js" :progress=87 />
 
-                        <h5 class="lead">PHP &nbsp;<i class="fab fa-php"></i></h5>
-                        <b-progress :value="85" :max="100" class="mb-3" variant="info"></b-progress>
+                        <app-progress title="PHP" icon="fab fa-php" :progress=80 />
 
-                        <h5 class="lead">HTML / CSS &nbsp;<i class="fab fa-html5"></i></h5>
-                        <b-progress :value="73" :max="100" class="mb-3" variant="info"></b-progress>
+                        <app-progress title="WordPress" icon="fab fa-wordpress" :progress=75 />
 
-                        <h5 class="lead">WordPress &nbsp;<i class="fab fa-wordpress"></i></h5>
-                        <b-progress :value="78" :max="100" class="mb-3" variant="info"></b-progress>
+                        <app-progress title="Vue.js" icon="fab fa-vuejs" :progress=73 />
+                        
+                        <app-progress title="HTML / CSS" icon="fab fa-html5" :progress=70 />
 
-                        <h5 class="lead">Vue JS &nbsp;<i class="fab fa-vuejs"></i></h5>
-                        <b-progress :value="59" :max="100" class="mb-3" variant="info"></b-progress>
-
-                        <h5 class="lead">BootStrap &nbsp;<i class="fab fa-bootstrap"></i></h5>
-                        <b-progress :value="65" :max="100" class="mb-3" variant="info"></b-progress>
+                        <app-progress title="BootStrap" icon="fab fa-bootstrap" :progress=65 />
                     </b-col>
                 </b-row>
                 <b-row class="text-center text-md-left mt-5">
@@ -107,7 +103,7 @@
                 </b-row>
                 <b-row class="p-md-5">
                     <b-col md class="mt-3">
-                        <b-link to="/services/">
+                        <b-link to="/contact/">
                             <b-card
                                 img-src="img/website-creation.jpg"
                                 img-alt="Image"
@@ -118,12 +114,12 @@
                                     Need a website? Look no more you have found your magical code monkey                            
                                 </b-card-text>
 
-                                <b-button to="/services/" variant="info">Learn More</b-button>
+                                <b-button to="/contact/" variant="info">Lets Talk</b-button>
                             </b-card>
                         </b-link>
                     </b-col>
                     <b-col md class="mt-3">
-                        <b-link to="/services/#website-redesign">
+                        <b-link to="/contact/">
                             <b-card
                                 img-src="img/website-redesign.jpg"
                                 img-alt="Image"
@@ -134,12 +130,12 @@
                                     Don’t like how your website looks? I probably won’t like it either. Lets fix it.
                                 </b-card-text>
 
-                                <b-button to="/services/#website-redesign" variant="info">Learn More</b-button>
+                                <b-button to="/contact/" variant="info">Lets Talk</b-button>
                             </b-card>
                         </b-link>
                     </b-col>
                     <b-col md class="mt-3">
-                        <b-link to="/services/#software-development">
+                        <b-link to="/contact/">
                             <b-card
                                 img-src="img/software.jpg"
                                 img-alt="Image"
@@ -150,8 +146,8 @@
                                     Have a cool idea? Need a nerd to make it for you? I’m kind of a nerd, <em>so</em>.
                                 </b-card-text>
 
-                                <b-button to="/services/#software-development" variant="info">
-                                    Learn More
+                                <b-button to="/contact/" variant="info">
+                                    Lets Talk
                                 </b-button>
                             </b-card>
                         </b-link>
@@ -178,11 +174,10 @@
 </template>
 
 <script>
-    // Header
-    import appHeader from './templates/HeaderHome.vue';
-
-    // Footer
-    import appFooter from './templates/Footer.vue';
+    // Components
+    import appHeader from './templates/HeaderHome.vue'; // Header
+    import appFooter from './templates/Footer.vue'; // Footer
+    import appProgress from './templates/Progress.vue'; // Progress bar
 
     export default {
         name: 'Main',
@@ -197,6 +192,7 @@
         components: {
             appHeader,
             appFooter,
+            appProgress
         }
     }
 </script>
